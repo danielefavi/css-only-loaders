@@ -1,0 +1,115 @@
+/*
+ *  The MIT License (MIT)
+ *  Copyright (c) 2014 Daniele Favi
+ *  email: favs83@gmailcom
+ */
+
+
+.dotsArea {
+    margin:0px auto 0px auto;
+    width:80px;
+    height:80px;
+    position:relative;
+    text-align:center;
+
+    -webkit-animation:rotation 2s infinite linear;
+    -moz-animation:rotation 2s infinite linear;
+    -ms-animation:rotation 2s infinite linear;
+    -o-animation:rotation 2s infinite linear;
+    animation:rotation 2s infinite linear;
+}
+
+.scalebleArea {
+    margin:0px 0px 0px 0px;
+    width:100%;
+    height:100%;
+    
+    position: absolute;
+    top:0;
+    left: 0;
+    -webkit-animation:scaleArea 1.6s infinite ease-in-out;
+    -moz-animation:scaleArea 1.6s infinite ease-in-out;
+    -ms-animation:scaleArea 1.6s infinite ease-in-out;
+    -o-animation:scaleArea 1.6s infinite ease-in-out;
+    animation:scaleArea 1.6s infinite ease-in-out
+}
+
+.area1 {
+    -webkit-animation-delay:-0.8s;
+    -moz-animation-delay:-0.8s;
+    -ms-animation-delay:-0.8s;
+    -o-animation-delay:-0.8s;
+    animation-delay:-0.8s
+}           
+            
+.area2 {
+    -webkit-animation-delay:-1.6s;
+    -moz-animation-delay:-1.6s;
+    -ms-animation-delay:-1.6s;
+    -o-animation-delay:-1.6s;
+    animation-delay:-1.6s
+}
+            
+@-webkit-keyframes rotation {
+    100% {
+        -webkit-transform:rotate(360deg)
+    }
+}
+
+@keyframes rotation{ 
+    100% {
+        transform:rotate(360deg);
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -ms-transform:rotate(360deg);
+        -o-transform:rotate(360deg)
+    }
+}
+      
+.circle1 {
+    position: absolute;
+    top:0;
+    left: 0;
+    transform-origin: 0% 0%;
+    height: 50%;
+    width: 50%;
+    background-color: #e74c3c;
+    border-radius: 50%;
+}
+
+.circle2 {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    transform-origin: 100% 100%;
+    height: 50%;
+    width: 50%;
+    background-color: #3b9bdc;
+    border-radius: 50%;
+}
+
+@-webkit-keyframes scaleArea {
+    0%,100% {
+        -webkit-transform:scale(0.5)
+    }
+    50% {
+        -webkit-transform:scale(1)
+    }
+} 
+
+@keyframes scaleArea {
+    0%,100% {
+        transform:scale(0.5);
+        -webkit-transform:scale(0.5);
+        -moz-transform:scale(0.5);
+        -ms-transform:scale(0.5);
+        -o-transform:scale(0.5)
+    }
+    50% {
+        transform:scale(1);
+        -webkit-transform:scale(1);
+        -moz-transform:scale(1);
+        -ms-transform:scale(1);
+        -o-transform:scale(1)
+    }
+}

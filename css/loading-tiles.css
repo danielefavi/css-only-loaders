@@ -1,0 +1,138 @@
+/*
+ *  The MIT License (MIT)
+ *  Copyright (c) 2014 Daniele Favi
+ *  email: favs83@gmailcom
+ */
+
+
+.loader-container-9tiles {
+    width: 110px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto 0px auto;
+    clear: both;
+}
+
+.loader-container-9tiles:after, .loader-container-9tiles:before {
+    clear: both;
+}
+
+.loader-container-4tiles {
+    width: 70px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto 0px auto;
+    clear: both;
+}
+
+.loader-container-4tiles:after, .loader-container-4tiles:before {
+    clear: both;
+}
+
+.square {
+    height: 30px;
+    width: 30px;
+    margin: 2px 2px 2px 2px;
+    background-color: #000;
+    float: left;
+    transform-origin: 50% 50%;
+    -webkit-animation:bounce 2s infinite ease-in-out;
+    -moz-animation:bounce 2s infinite ease-in-out;
+    -ms-animation:bounce 2s infinite ease-in-out;
+    -o-animation:bounce 2s infinite ease-in-out;
+    animation:bounce 2s infinite ease-in-out
+}
+
+.s1 {
+    background-color: #1abc9c;
+    -webkit-animation-delay:-2s;
+    -moz-animation-delay:-2s;
+    -ms-animation-delay:-2s;
+    -o-animation-delay:-2s;
+    animation-delay:-2s;
+}
+
+.s2 {
+    background-color: #f1c40f;
+    -webkit-animation-delay:-1.8s;
+    -moz-animation-delay:-1.8s;
+    -ms-animation-delay:-1.8s;
+    -o-animation-delay:-1.8s;
+    animation-delay:-1.8s;
+}
+
+.s3 {
+    background-color: #2ecc71;
+    -webkit-animation-delay:-1.6s;
+    -moz-animation-delay:-1.6s;
+    -ms-animation-delay:-1.6s;
+    -o-animation-delay:-1.6s;
+    animation-delay:-1.6s;
+}
+
+.s4 {
+    background-color: #e67e22;
+    -webkit-animation-delay:-1.4s;
+    -moz-animation-delay:-1.4s;
+    -ms-animation-delay:-1.4s;
+    -o-animation-delay:-1.4s;
+    animation-delay:-1.4s;
+}
+
+.s5 {
+    background-color: #34495e;
+    -webkit-animation-delay:-1.2s;
+    -moz-animation-delay:-1.2s;
+    -ms-animation-delay:-1.2s;
+    -o-animation-delay:-1.2s;
+    animation-delay:-1.2s;
+}
+
+.s6 {
+    background-color: #e74c3c;
+    -webkit-animation-delay:-1s;
+    -moz-animation-delay:-1s;
+    -ms-animation-delay:-1s;
+    -o-animation-delay:-1s;
+    animation-delay:-1s;
+}
+
+.s7 {
+    background-color: #9b59b6;
+    -webkit-animation-delay:-0.8s;
+    -moz-animation-delay:-0.8s;
+    -ms-animation-delay:-0.8s;
+    -o-animation-delay:-0.8s;
+    animation-delay:-0.8s;
+}
+
+.s8 {
+    background-color: #bdc3c7;
+    -webkit-animation-delay:-0.6s;
+    -moz-animation-delay:-0.6s;
+    -ms-animation-delay:-0.6s;
+    -o-animation-delay:-0.6s;
+    animation-delay:-0.6s;
+}
+
+.s9 {
+    background-color: #3498db;
+    -webkit-animation-delay:-0.4s;
+    -moz-animation-delay:-0.4s;
+    -ms-animation-delay:-0.4s;
+    -o-animation-delay:-0.4s;
+    animation-delay:-0.4s;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+
+@-webkit-keyframes bounce {
+    0%,100%{-webkit-transform:scale(0)}
+    50%{-webkit-transform:scale(1)}
+} 
+
+@keyframes bounce {0%, 
+    100% {transform:scale(0);-webkit-transform:scale(0);-moz-transform:scale(0);-ms-transform:scale(0);-o-transform:scale(0)}
+    50% {transform:scale(1);-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1)}
+}
